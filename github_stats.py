@@ -3,7 +3,7 @@ import json
 
 def get_github_stats(username):
     # GitHub API endpoint for user information
-    url = f"https://api.github.com/users/{username}"
+    url = f"https://api.github.com/users/{RoNotBroYT}"
     
     # Sending GET request to the GitHub API
     response = requests.get(url)
@@ -19,7 +19,7 @@ def get_github_stats(username):
         following = data['following']
         
         # Printing the stats
-        print(f"GitHub Stats for {username}:")
+        print(f"GitHub Stats for {RoNotBroYT}:")
         print(f"Public Repositories: {public_repos}")
         print(f"Followers: {followers}")
         print(f"Following: {following}")
@@ -29,4 +29,4 @@ def get_github_stats(username):
 # Main function to fetch and display GitHub stats
 if __name__ == "__main__":
     username = "RoNotBroYT"
-    get_github_stats(username)
+    get_github_stats(RoNotBroYT)
